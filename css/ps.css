@@ -60,6 +60,9 @@ img {
     max-width: 40%;
     float: left;
 }
+.logo {
+    max-width: 2.5%;
+}
 
 input {
     max-width: 95%;
