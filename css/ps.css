@@ -28,6 +28,7 @@ h4 {
 }
 
 legend {
+
     font-weight: bold;
     font-size: 2em;
 }
@@ -61,35 +62,25 @@ img {
     float: left;
 }
 .logo {
-    max-width: 2.5%;
+    max-width: 10%;
 }
 
-input {
+/* input {
     max-width: 95%;
-}
+} */
 
-textarea {
+/* textarea {
     max-width: 95%;
-}
+} */
 
 .landing {
-    margin: -55px 0 0 0;
+    margin:-70px 0 0 0; 
     padding: 0px;
-    top: 0px;
+    /* top: -60px; */
     position: relative;
 }
 
 header {
-    /*filter: brightness(0.4);
-    filter: blur(5px);
-    filter: contrast(200%);
-    filter: drop-shadow(16px 16px 20px blue);
-    filter: grayscale(50%);
-    filter: hue-rotate(90deg);
-    filter: invert(75%);
-    filter: opacity(50%);
-    filter: saturate(30%);
-    filter: sepia(60%);*/
     text-align: center;
     background-image: url("../img/pshero1.png");
     background-size: cover;
@@ -159,7 +150,7 @@ header h3 {
 
 .tblgrid {
     display: grid;
-    grid: repeat(3, 100%) / auto-flow dense;
+    grid: repeat(3, 33%) / auto-flow dense;
 }
 
 .tblgrid div {
@@ -196,14 +187,6 @@ p {
 .contact h3 {
     color: crimson;
 }
-
-/* .contact ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-} */
-
-/* .signup {} */
 
 .signup label {
     font-size: 0.8em;
@@ -367,7 +350,7 @@ p {
 
 /* @media all and (max-width: 890px) {} */
 
-@media all and (max-width: 323px) {
+@media all and (max-width: 500px) {
 
     p,
     ul,
@@ -381,8 +364,12 @@ p {
 
     .content {
         margin: 0px;
+        /* width: 100%; */
     }
-
+    .landing {
+        top: 0;
+        position: relative;
+    }
     .cuadroIzq {
         max-width: 100%;
         display: block;
@@ -394,7 +381,8 @@ p {
     }
 
     .tblgrid {
-        grid: repeat(12, 100%) / auto-flow dense;
+        display: block;
+        grid: none;
     }
 
     img {
@@ -412,7 +400,7 @@ p {
         columns: 1;
         -webkit-columns: 1;
         -moz-columns: 1;
-    }cd po
+    }
 
     .contact ul li {
         line-height: 1em;
@@ -421,7 +409,13 @@ p {
     .signup label input,
     .signup label select,
     .signup label textarea {
-        width: 100%;
+        width: 95%;
+    }
+    .long_ref{
+        font-size: medium;
+    }
+    .landing {
+        margin: 0px;
     }
 
 }
